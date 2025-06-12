@@ -1,0 +1,23 @@
+/* src/assets/main.css */
+
+/* Mengimpor fondasi tema dari base.css */
+@import './base.css';
+
+/* Style untuk layout utama aplikasi */
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--color-primary-hover);
+  }
+}

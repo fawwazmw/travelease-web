@@ -1,0 +1,41 @@
+/* src/assets/base.css */
+
+/* Mendefinisikan palet warna utama kita sebagai CSS Variables */
+:root {
+  --color-primary: #446DFF;
+  --color-primary-hover: #3a5de0; /* Sedikit lebih gelap untuk hover effect */
+
+  --color-background: #f8f9fa; /* Latar belakang sedikit abu-abu, lebih nyaman di mata */
+  --color-surface: #ffffff;    /* Warna untuk card, box, dll. */
+
+  --color-text: #212529;       /* Hitam lembut untuk teks */
+  --color-text-light: #ffffff;  /* Putih untuk teks di atas background berwarna */
+  --color-text-muted: #6c757d;  /* Abu-abu untuk teks sekunder */
+
+  --color-border: #dee2e6;
+  --color-error: #e74c3c;
+}
+
+/* Menghapus semua style bawaan dan menerapkan fondasi yang bersih */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+  Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
